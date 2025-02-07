@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="5" preserve-order="true" name="1.Login Functionality Test   ">
+        <classes>
+            <class name="Test.LoginPageTest">
+                <methods>
+                    <include name="LoginTest"/>
+                    <include name="NegativeCasesTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  verbose="5" preserve-order="true" name="2.Add to Cart Functionality">
+        <classes>
+            <class name="Test.AddToCartFunctionalitiesTest">
+                <methods>
+                    <include name="AddToCartTest"/>
+                    <include name="EdgeCasesTest"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test  verbose="5" preserve-order="true" name="3.Checkout Process Validation  ">
+        <classes>
+            <class name="Test.CheckoutProcessTest">
+                <methods>
+                    <include name="CheckoutProcessTest"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test  verbose="5" preserve-order="true" name="4.Sorting Products Validation">
+        <classes>
+            <class name="Test.SortingProductsTest">
+                <methods>
+                    <include name="SortByLowToHighTest"/>
+                    <include name="SortByHighToLowTest"/>
+                    <include name="SortByAtoZTest"/>
+                    <include name="SortByZtoATest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  verbose="5" preserve-order="true" name="5.Verify that the logout process works correctly.  ">
+        <classes>
+            <class name="Test.LoginPageTest">
+                <methods>
+                    <include name="LogoutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  verbose="5" preserve-order="true" name="6.Locked-Out User Validation   ">
+        <classes>
+            <class name="Test.LoginPageTest">
+                <methods>
+                    <include name="LockedOutUserValidationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  verbose="5" preserve-order="true" name="7.Cart Badge Count Validation  ">
+        <classes>
+            <class name="Test.CartBadgeCountValidationTest">
+                <methods>
+                    <include name="AddMultipleProductsCartBadgeTest"/>
+                    <include name="RemoveAProductCartBadgeTest"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
